@@ -44,7 +44,7 @@ def url_crawler(url):
       anime_dict['image'] = image
 
       all_animes.append(anime_dict)
-    f = open('output.json', 'w')
+    f = open('./database/new_season.json', 'w')
     f.write(json.dumps(all_animes))
     f.close()
     return all_animes
